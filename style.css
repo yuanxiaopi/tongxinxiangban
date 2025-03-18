@@ -1,0 +1,135 @@
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 通用字体和背景 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 容器样式 */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 头部区域 */
+header {
+    background-color: #ffcc80;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* 服务部分 */
+.services {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #ffeb3b;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 28%;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* 二维码部分 */
+.qr-section {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.qr-code {
+    width: 200px;
+    margin-top: 20px;
+    border: 5px solid #ff5722;
+    border-radius: 10px;
+}
+
+/* 底部部分 */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .qr-code {
+        width: 150px;
+    }
+}
